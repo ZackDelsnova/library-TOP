@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <h1>Library</h1>
+            <nav>
+                <div></div>
+            </nav>      
+        </div>
+    </header>
+    <main class="container">
+        <button class="add-book">+ Add Book</button>
+        <div class="book-grid"></div>
+    </main>
+
+
+    <div class="modal" id="addBookModal">
+        <form class="add-book-form" id="addBookForm">
+            <h3>Add new Book</h3>
+            <input class="input" id="title" type="text" placeholder="Title" required maxlength="100" />
+            <input class="input" type="text" id="author" placeholder="Author" required maxlength="100" />
+        <input class="input" type="number" id="pages" placeholder="Pages" required max="10000" />
+        <div class="status">
+            <label for="status">Status </label>
+            <select name="status" id="status">
+                <option value="completed">Completed</option>
+                <option value="plan-to">Plan to read</option>
+                <option value="reading">Reading</option>
+                <option value="dropped">Dropped</option>
+                <option value="on-hold">On Hold</option>
+            </select>
+        </div>
+        <button class="submitBtn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
